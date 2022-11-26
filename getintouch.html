@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="hgpportfolio.css">
+
+    <link rel="icon" type="image/png" href="imgs/favicon.png" sizes="32x32">
+
+    <script src="https://kit.fontawesome.com/9db8c8f444.js" crossorigin="anonymous"></script>
+
+    <title> Hannah Grech Pirotta </title>
+</head>
+
+<body>
+   
+    <div id="left">
+        <a href="index.html">
+            <h1 id="hometitle"> Hannah Grech Pirotta </h1>
+        </a>
+        <p> A graphic designer from Malta, currently based in
+            London pursuing her MA in Graphic Branding & Identity at
+            London College of Communication. </p>
+        <a href="about.html">
+            <br>
+            <br>
+            <h2 class="strike"> About </h2>
+        </a>
+        <h2 class="strike"> Drop a line </h2>
+    </div>
+
+    <div id="right">
+        <a href="https://www.instagram.com/hgp.design/" target="_blank"> <h3 id="icons"><i class="fa-brands fa-instagram"></i>  Follow me </h3> </a>
+        <a href="mailto: hannahgrechpirotta99@gmail.com" target="_blank"> <h3 id="icons"><i class="fa-regular fa-envelope"></i>  Email me </h3> </a>
+        <a href="https://www.linkedin.com/in/hannah-grech-pirotta" target="_blank"> <h3 id="icons"><i class="fa-brands fa-linkedin-in"></i>  Connect </h3> </a>
+    </div>
+    <div class="cursor"> </div>
+
+
+
+    <script>
+const cursor = document.querySelector('.cursor');
+
+document.addEventListener('mousemove', e => {
+    cursor.setAttribute("style", "top: "+(e.pageY - 10)+"px; left: "+(e.pageX - 10)+"px;")
+})
+
+document.addEventListener('click', () => {
+    cursor.classList.add("expand");
+
+    setTimeout(() => {
+        cursor.classList.remove("expand");
+    }, 500)
+})
+</script>
+
+</body>
+
+</html>

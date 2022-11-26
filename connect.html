@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="hgpportfolio.css">
+
+    <link rel="icon" type="image/png" href="imgs/favicon.png" sizes="32x32">
+
+    <title> Connect the Dots </title>
+</head>
+
+<body>
+    <div id="left">
+        <a href="index.html">
+            <h1 id="hometitle"> Hannah Grech Pirotta </h1>
+            <h4> Connect the Dots </h4>
+        </a>
+        <p> Connect the Dots is a works-in-progress show organised and curated by a team of MA Graphic Branding &
+            Identity students at the London College of Communication in 2022. This leaflet was created to showcase the
+            participating students and champion the identity.
+        </p>
+        <br>
+        <br>
+        <p id="italics"> Collaborators: Nayera Magdy.</p>
+
+        <a href="about.html">
+            <br>
+            <br>
+            <h2 class="strike"> About </h2>
+        </a>
+        <h2 class="strike"> Drop a line </h2>
+    </div>
+
+    <div id="right-connect">
+        <img src="imgs/connect-home.png" id="homeimg" alt="connect the dots leaflet">
+
+        <img src="imgs/connect-1.png" id="imgleft" alt="connect the dots leaflet">
+        <img src="imgs/connect-2.png" id="imgright" alt="connect the dots leaflet">
+
+        <img src="imgs/connect-flat.png" id="homeimg" alt="connect the dots flatlay">
+    </div>
+
+    <div id="right-bottom">
+        <a href="index.html">
+            <h5 class="strikecentre"> Back to Home </h5>
+        </a>
+    </div>
+
+    <div class="cursor"> </div>
+
+
+
+    <script>
+const cursor = document.querySelector('.cursor');
+
+document.addEventListener('mousemove', e => {
+    cursor.setAttribute("style", "top: "+(e.pageY - 10)+"px; left: "+(e.pageX - 10)+"px;")
+})
+
+document.addEventListener('click', () => {
+    cursor.classList.add("expand");
+
+    setTimeout(() => {
+        cursor.classList.remove("expand");
+    }, 500)
+})
+</script>
+
+
+</body>
+
+</html>

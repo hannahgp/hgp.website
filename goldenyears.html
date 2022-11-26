@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="hgpportfolio.css">
+
+    <link rel="icon" type="image/png" href="imgs/favicon.png" sizes="32x32">
+
+    <title> Golden Years </title>
+</head>
+
+<body>
+    <div id="left">
+        <a href="index.html">
+            <h1 id="hometitle"> Hannah Grech Pirotta </h1>
+            <h4> Golden Years </h4>
+        </a>
+        <p> The Golden Years is a pilot project for Teatru Salesjan, an NGO voluntary organisation, which aims to
+            organise theatrical events for the local active aging community.
+            The logo is a minimal, art deco wordmark, inspired by the Golden Girls series and the architecture of Teatru
+            Salesjan. </p>
+        <a href="about.html">
+            <br>
+            <br>
+            <h2 class="strike"> About </h2>
+        </a>
+        <h2 class="strike"> Drop a line </h2>
+    </div>
+
+    <div id="right-goldenyears">
+        <img src="imgs/goldenyears-home.gif" id="homeimg" alt="golden years">
+
+        <img src="imgs/goldenyears-leaf.png" id="imgleft" alt="golden years leaflet">
+        <img src="imgs/goldenyears-alt.png" id="imgright" alt="golden years log alternates">
+
+    </div>
+
+    <div id="right-bottom">
+        <a href="index.html">
+            <h5 class="strikecentre"> Back to Home </h5>
+        </a>
+    </div>
+
+    <div class="cursor"> </div>
+
+
+
+    <script>
+const cursor = document.querySelector('.cursor');
+
+document.addEventListener('mousemove', e => {
+    cursor.setAttribute("style", "top: "+(e.pageY - 10)+"px; left: "+(e.pageX - 10)+"px;")
+})
+
+document.addEventListener('click', () => {
+    cursor.classList.add("expand");
+
+    setTimeout(() => {
+        cursor.classList.remove("expand");
+    }, 500)
+})
+</script>
+
+
+</body>
+
+</html>

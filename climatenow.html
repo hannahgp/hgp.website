@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="hgpportfolio.css">
+
+    <link rel="icon" type="image/png" href="imgs/favicon.png" sizes="32x32">
+
+    <title> Climate Now </title>
+</head>
+
+<body>
+    <div id="left">
+        <a href="index.html">
+            <h1 id="hometitle"> Hannah Grech Pirotta </h1>
+            <h4> Climate Now </h4>
+        </a>
+        <p> How can branding address the issue of the climate crisis?
+            <br>
+            <br>
+            Through creating a series of pictograms illustrating the causes, effects, and preventions of climate change,
+            the community- lead organisation, Climate Now, is striving to reignite the manageable urgency of the climate
+            crisis.
+        </p>
+
+        <a href="about.html">
+            <br>
+            <br>
+            <h2 class="strike"> About </h2>
+        </a>
+        <h2 class="strike"> Drop a line </h2>
+    </div>
+
+    <div id="right-climate">
+        <img src="imgs/climatenow-home.png" id="homeimg" alt="climate now">
+
+        <img src="imgs/climate-blue.png" id="imgleft2" alt="climate now posters">
+        <img src="imgs/climate-red.png" id="imgcentre" alt="climate now posters">
+        <img src="imgs/climate-yellow.png" id="imgright2" alt="climate now posters">
+
+        <img src="imgs/climate-tube.png" id="homeimg" alt="climate now poster">
+
+        <img src="imgs/climate-drafts1.png" id="imgleft2" alt="climate now drafts">
+        <img src="imgs/climate-drafts2.png" id="imgcentre" alt="climate now drafts">
+        <img src="imgs/climate-drafts3.png" id="imgright2" alt="climate now drafts">
+        <img src="imgs/climate-drafts4.png" id="imgleft2" alt="climate now drafts">
+        <img src="imgs/climate-drafts5.png" id="imgcentre" alt="climate now drafts">
+        <img src="imgs/climate-drafts6.png" id="imgright2" alt="climate now drafts">
+
+    </div>
+
+    <div id="right-bottom">
+        <a href="index.html">
+            <h5 class="strikecentre"> Back to Home </h5>
+        </a>
+    </div>
+    <div class="cursor"> </div>
+
+
+
+    <script>
+const cursor = document.querySelector('.cursor');
+
+document.addEventListener('mousemove', e => {
+    cursor.setAttribute("style", "top: "+(e.pageY - 10)+"px; left: "+(e.pageX - 10)+"px;")
+})
+
+document.addEventListener('click', () => {
+    cursor.classList.add("expand");
+
+    setTimeout(() => {
+        cursor.classList.remove("expand");
+    }, 500)
+})
+</script>
+
+
+
+</body>
+
+</html>

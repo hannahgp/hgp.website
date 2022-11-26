@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="hgpportfolio.css">
+
+    <link rel="icon" type="image/png" href="imgs/favicon.png" sizes="32x32">
+
+    <title> Sharing Chapters </title>
+</head>
+
+<body>
+    <div id="left">
+        <a href="index.html">
+            <h1 id="hometitle"> Hannah Grech Pirotta </h1>
+            <h4> Sharing Chapters </h4>
+        </a>
+        <p> Penguin wants to break books back into mainstream culture.
+            <br> <br>
+            Sharing Chapters: Powered by Penguin aims to integrate books back into our everyday conversations, sparking
+            a sense of joy and discovery with every interaction.
+            <br> <br>
+            This initiative gives anyone a free chapter everyday, allowing you to view, save or share via our online
+            hub. To access a chapter, you can tap on one of the interactive plinth’s dotted around London with your
+            phone, or scan one of the QR codes printed onto our stickers which will be placed all over.
+            <br> <br>
+            Sharing Chapters incorporates the responsive and participatory nature of digital media with the reading
+            experience. By merging this with interactive, physical interventions, and making the content short and
+            shareable, it serves as the catalyst for conversations, fostering a sense of community and shared
+            experiences around the books that readers discover.
+            <br> <br>
+            D&AD New Blood Submission 2022
+        </p>
+
+        <p id="italics"> Collaborators: Arthi Rangaraj, Katherine Joubert, Nayera Magdy, Oliver Wall. </p>
+
+        <a href="about.html">
+            <br>
+            <br>
+            <h2 class="strike"> About </h2>
+        </a>
+        <h2 class="strike"> Drop a line </h2>
+    </div>
+
+    <div id="right-sharing">
+        <img src="imgs/sharingchapters-home.png" id="homeimg" alt="sharing chapters">
+        <img src="imgs/sharing-billboards.png" id="homeimg" alt="sharing chapters billboards">
+
+        <img src="imgs/sharing-plinth1.png" id="imgleft" alt="sharing chapters plinth">
+        <img src="imgs/sharing-plinth2.png" id="imgright" alt="sharing chapters plinth">
+
+        <img src="imgs/sharing-tube.gif" id="homeimg" alt="sharing chapters tube ad">
+
+        <img src="imgs/sharing-socials.gif" id="homeimg" alt="sharing chapters socials">
+
+        <img src="imgs/sharing-busstop.png" id="imgleft" alt="sharing chapters bus stop">
+        <img src="imgs/sharing-browser.png" id="imgright" alt="sharing chapters browser">
+
+        <img src="imgs/sharing-bus.png" id="homeimg" alt="sharing chapters bus">
+
+        <img src="imgs/sharing-hub.gif" id="homeimg" alt="sharing chapters hub">
+
+        <img src="imgs/sharing-splash.png" id="homeimg" alt="sharing chapters splashpage">
+
+    </div>
+
+    <div id="right-bottom">
+        <a href="index.html">
+            <h5 class="strikecentre"> Back to Home </h5>
+        </a>
+    </div>
+
+    <div class="cursor"> </div>
+
+
+
+    <script>
+const cursor = document.querySelector('.cursor');
+
+document.addEventListener('mousemove', e => {
+    cursor.setAttribute("style", "top: "+(e.pageY - 10)+"px; left: "+(e.pageX - 10)+"px;")
+})
+
+document.addEventListener('click', () => {
+    cursor.classList.add("expand");
+
+    setTimeout(() => {
+        cursor.classList.remove("expand");
+    }, 500)
+})
+</script>
+
+
+</body>
+
+</html>

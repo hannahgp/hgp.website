@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="hgpportfolio.css">
+
+    <link rel="icon" type="image/png" href="imgs/favicon.png" sizes="32x32">
+
+    <title> Survival Ciders </title>
+</head>
+
+<body>
+    <div id="left">
+        <a href="index.html">
+            <h1 id="hometitle"> Hannah Grech Pirotta </h1>
+            <h4> Survival Ciders </h4>
+        </a>
+        <p> Survival Ciders is a fictional, local independent brewery,
+            creating fresh organic cider that becomes your outdoor social companion.
+            Whether it’s relaxing by the beach after a long hike, or a camping trip with friends,
+            our cider is the only essential item you need. <br> No fuss, just cider. </p>
+        <a href="about.html">
+            <br>
+            <br>
+            <h2 class="strike"> About </h2>
+        </a>
+        <h2 class="strike"> Drop a line </h2>
+    </div>
+
+    <div id="right-ciders">
+        <img src="imgs/ciders-home.png" id="homeimg" alt="ciders">
+
+        <img src="imgs/ciders-3.png" id="imgleft" alt="blue cider can">
+        <img src="imgs/ciders-4.png" id="imgright" alt="yellow cider can">
+        <img src="imgs/ciders-1.png" id="imgleft" alt="red cider can">
+        <img src="imgs/ciders-2.png" id="imgright" alt="green cider can">
+
+        <img src="imgs/ciders-brand.png" id="homeimg" alt="ciders logo">
+
+        <img src="imgs/ciders-5.png" id="imgleft" alt="brand values">
+        <img src="imgs/ciders-6.png" id="imgright" alt="brand values">
+        <img src="imgs/ciders-7.png" id="imgleft" alt="rbrand values">
+        <img src="imgs/ciders-8.png" id="imgright" alt="brand values">
+    </div>
+
+    <div id="right-bottom">
+        <a href="index.html">
+            <h5 class="strikecentre"> Back to Home </h5>
+        </a>
+    </div>
+
+    <div class="cursor"> </div>
+
+
+
+    <script>
+const cursor = document.querySelector('.cursor');
+
+document.addEventListener('mousemove', e => {
+    cursor.setAttribute("style", "top: "+(e.pageY - 10)+"px; left: "+(e.pageX - 10)+"px;")
+})
+
+document.addEventListener('click', () => {
+    cursor.classList.add("expand");
+
+    setTimeout(() => {
+        cursor.classList.remove("expand");
+    }, 500)
+})
+</script>
+
+
+</body>
+
+</html>

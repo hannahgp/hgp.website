@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="hgpportfolio.css">
+
+    <link rel="icon" type="image/png" href="imgs/favicon.png" sizes="32x32">
+
+    <title> Merħba </title>
+</head>
+
+<body>
+    <div id="left">
+        <a href="index.html">
+            <h1 id="hometitle"> Hannah Grech Pirotta </h1>
+            <h4> Merħba </h4>
+        </a>
+        <p> How much of who I am, as a creative, comes from home? This is a question I found myself asking, as a young
+            designer migrating to London from the small island of Malta. Through developing two initial typefaces from
+            Maltese hand-made signage and focusing on the inclusion of Maltese letterforms, I began to reflect on my
+            relationship with home, and the wonderful design possibilities that lie within it.
+            <br> <br>
+            In order to explore these typefaces visually and tangibly, I produced a selection of risograph prints and
+            lino prints which championed the type, as well as colour schemes inspired by Malta.
+        </p>
+        <a href="about.html">
+            <br>
+            <br>
+            <h2 class="strike"> About </h2>
+        </a>
+        <h2 class="strike"> Drop a line </h2>
+    </div>
+
+    <div id="right-ciders">
+        <img src="imgs/merhba-home.png" id="homeimg" alt="merhba prints">
+
+        <img src="imgs/merhba-jubilee.png" id="imgleft" alt="merhba jubilee store">
+        <img src="imgs/merhba-homeoil.png" id="imgright" alt="merhba home oil">
+        <img src="imgs/merhba-jubwork.png" id="imgleft" alt="jubilee typeface sketch">
+        <img src="imgs/merhba-homework.png" id="imgright" alt="home oil typeface sketch">
+
+        <img src="imgs/merhba-jubileetype.png" id="homeimg" alt="typeface showcase">
+        <img src="imgs/merhba-homeoiltype.png" id="homeimg" alt="typeface showcase">
+    </div>
+
+    <div id="right-bottom">
+        <a href="index.html">
+            <h5 class="strikecentre"> Back to Home </h5>
+        </a>
+    </div>
+
+    <div class="cursor"> </div>
+
+
+
+    <script>
+const cursor = document.querySelector('.cursor');
+
+document.addEventListener('mousemove', e => {
+    cursor.setAttribute("style", "top: "+(e.pageY - 10)+"px; left: "+(e.pageX - 10)+"px;")
+})
+
+document.addEventListener('click', () => {
+    cursor.classList.add("expand");
+
+    setTimeout(() => {
+        cursor.classList.remove("expand");
+    }, 500)
+})
+</script>
+
+
+</body>
+
+</html>
