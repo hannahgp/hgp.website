@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="hgpportfolio.css">
+
+    <link rel="icon" type="image/png" href="imgs/favicon.png" sizes="32x32">
+
+    <script src="https://kit.fontawesome.com/9db8c8f444.js" crossorigin="anonymous"></script>
+
+    <title> HGP </title>
+</head>
+
+<body>
+   
+    <div id="left">
+        <a href="index.html">
+            <h1 id="hometitle"> Hannah Grech Pirotta </h1>
+        </a>
+        <p> A graphic designer from Malta, currently based in
+            London pursuing her MA in Graphic Branding & Identity at
+            London College of Communication. </p>
+        <a href="about.html">
+            <br>
+            <br>
+            <h2 class="strike"> About </h2>
+        </a>
+        <a href="getintouch.html"> 
+            <h2 class="strike"> Drop a line </h2> 
+        </a>
+       
+        
+    </div> 
+
+    <div id="right">
+        <img src="imgs/typetana-home.png" id="homeimg" alt="type tana">
+        <a href="typetana.html">
+            <h3 id="title"> TYPE TANA. Brand identity and typeface design. </h3>
+        </a>
+
+        <img src="imgs/ciders-home.png" id="homeimg" alt="ciders">
+        <a href="survivalciders.html">
+            <h3 id="title"> Survival Ciders. Brand identity. </h3>
+        </a>
+
+        <img src="imgs/testable-home.gif" id="homeimg" alt="testable">
+        <a href="testable.html">
+            <h3 id="title"> Testable. Brand identity pitch. </h3>
+        </a>
+
+        <img src="imgs/climatenow-home.png" id="homeimg" alt="climate now">
+        <a href="climatenow.html">
+            <h3 id="title"> Climate Now. Brand identity. </h3>
+        </a>
+
+        <img src="imgs/sharingchapters-home.png" id="homeimg" alt="sharing chapters">
+        <a href="sharingchapters.html">
+            <h3 id="title"> Sharing Chapters. D&AD submission. </h3>
+        </a>
+
+        <img src="imgs/goldenyears-home.gif" id="homeimg" alt="golden years">
+        <a href="goldenyears.html">
+            <h3 id="title"> Golden Years. Brand identity. </h3>
+        </a>
+
+        <img src="imgs/politiquette-home.png" id="homeimg" alt="politiquette">
+        <a href="politiquette.html">
+            <h3 id="title"> Politiquette. Brand identity. </h3>
+        </a>
+
+        <img src="imgs/paperbags-home.png" id="homeimg" alt="paper bags">
+        <a href="paperbags.html">
+            <h3 id="title"> Paper Bags. Infographic installation. </h3>
+        </a>
+
+        <img src="imgs/connect-home.png" id="homeimg" alt="connect the dots leaflet">
+        <a href="connect.html">
+            <h3 id="title"> Connect the Dots. MA works-in-progress show leaflet. </h3>
+        </a>
+
+        <img src="imgs/merhba-home.png" id="homeimg" alt="merhba prints">
+        <a href="merhba.html">
+            <h3 id="title"> Home Type. Typeface and print development. </h3>
+        </a>
+
+    </div>
+    <div class="cursor"> </div>
+
+
+
+    <script>
+const cursor = document.querySelector('.cursor');
+
+document.addEventListener('mousemove', e => {
+    cursor.setAttribute("style", "top: "+(e.pageY - 10)+"px; left: "+(e.pageX - 10)+"px;")
+})
+
+document.addEventListener('click', () => {
+    cursor.classList.add("expand");
+
+    setTimeout(() => {
+        cursor.classList.remove("expand");
+    }, 500)
+})
+</script>
+
+</body>
+
+</html>

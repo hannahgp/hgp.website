@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="hgpportfolio.css">
+
+    <link rel="icon" type="image/png" href="imgs/favicon.png" sizes="32x32">
+
+    <title> Hannah Grech Pirotta </title>
+</head>
+
+<body>
+    <div id="left">
+        <a href="index.html">
+            <h1 id="hometitle"> Hannah Grech Pirotta </h1>
+        </a>
+        <p> MA in Graphic Branding & Identity at
+            the London College of Communication. 
+            <br>
+            <br>
+            Bachelor of Fine Arts (First Class Honours) in Digital Arts at the University of Malta
+            </p>
+        <a href="about.html">
+            <br>
+            <br>
+            <h2 class="strike"> About </h2>
+        </a>
+        <a href="getintouch.html"> 
+            <h2 class="strike"> Drop a line </h2> 
+        </a>
+    </div>
+
+    <div id="right">
+        <h6> <span id="bio">From </span> <span id="bio">the </span><span id="bio">little </span>
+            <span id="bio">island </span><span id="bio">of </span><span id="bio">Malta, </span></h6>
+         <h6> 
+            <span id="bio">graphic </span><span id="bio">and </span><span id="bio">brand </span>
+            <span id="bio">designer </span><span id="bio">Hannah </span>
+         </h6>   
+         <h6> 
+            <span id="bio">is </span><span id="bio">currently </span><span id="bio">navigating </span>
+            <span id="bio">her </span><span id="bio">way </span><span id="bio">through </span>
+        </h6>
+        <h6>
+            <span id="bio">the </span><span id="bio">hustle </span><span id="bio">of </span>
+            <span id="bio">London's </span><span id="bio">creative </span><span id="bio">culture, </span>
+        </h6>
+        <h6> 
+            <span id="bio">one </span><span id="bio">(big) </span><span id="bio">idea </span>
+            <span id="bio">at </span><span id="bio">a </span><span id="bio">time. </span>
+        </h6>
+        <h6> 
+            <span id="bio"><br> Driven, </span><span id="bio">direct, </span><span id="bio">and </span>
+            <span id="bio">dedicated </span>
+        </h6>
+        <h6> 
+            <span id="bio">to </span><span id="bio">building </span><span id="bio">worlds </span>
+            <span id="bio">for </span><span id="bio">brands </span><span id="bio">who </span><span id="bio">care.</span>
+        </h6>
+    </div>
+
+
+</body>
+
+<div class="cursor"> </div>
+
+
+
+    <script>
+const cursor = document.querySelector('.cursor');
+
+document.addEventListener('mousemove', e => {
+    cursor.setAttribute("style", "top: "+(e.pageY - 10)+"px; left: "+(e.pageX - 10)+"px;")
+})
+
+document.addEventListener('click', () => {
+    cursor.classList.add("expand");
+
+    setTimeout(() => {
+        cursor.classList.remove("expand");
+    }, 500)
+})
+</script>
+
+</html>
