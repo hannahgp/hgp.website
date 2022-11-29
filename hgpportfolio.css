@@ -130,12 +130,23 @@ h6 {
   margin-bottom: 0;
 }
 
+#copyright {
+  font-family: 'Avenir', sans-serif;
+  font-weight: 400;
+  color: #000000;
+  font-size: 0.95vw;
+  text-align: left;
+  width: 97%;
+  margin-left: 3.5%;
+  padding-bottom: 3%;
+}
+
 #typetanatour {
   font-family: 'Avenir', sans-serif;
   font-weight: 500;
   color: #000000;
   font-size: 1.2vw;
-  text-align: center;
+  text-align: left;
   width: 97%;
   margin-left: 3.5%;
   margin-bottom: 0; 
